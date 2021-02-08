@@ -1,1 +1,1 @@
-# Full-Stack-React-Projects-01-Dev-Envirnment
+Full Stack React Projects by Packt Ch 02: Preparing the Development Environment
