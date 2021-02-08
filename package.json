@@ -2,15 +2,20 @@
     "name": "02-Dev-Environment",
     "version": "1.0.0",
     "description": "Full Stack React Projects by Packt Ch 02: Preparing the Development Environment",
-    "main": "index.js",
+    "main": "main.js",
     "repository": "https://github.com/donchase/Full-Stack-React-Projects-02-Dev-Environment-U.git",
     "author": "donchase <donchase@gmail.com>",
     "license": "MIT",
     "private": false,
+    "scripts": {
+        "development": "nodemon",
+        "build": "webpack --config webpack.config.client.production.js && webpack --mode = production --config webpack.config.server.js",
+        "start": "NODE_ENV=production node ./dist/server.generated.js"
+    },
     "dependencies": {
         "@hot-loader/react-dom": "16.13.0",
         "express": "4.17.1",
-        "mongodb": "3.5.5",
+        "mongodb": "^3.6.4",
         "react": "16.13.1",
         "react-dom": "16.13.1",
         "react-hot-loader": "4.12.20"
